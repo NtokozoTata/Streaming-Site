@@ -4,11 +4,93 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="categories.css">
+  <link rel="stylesheet" href="/CSS/categories.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+  rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+  crossorigin="anonymous">
+  <script src="https;//kit.fontawsome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
   <title>Categories</title>
 </head>
 <body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">Logo</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Logo</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="#">HOME</a></li>
+          <li>
+            <a href="#">MUSIC VIDEOS</Video></a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">HipPop</a></li>
+              <li><a href="#">Jazz</a></li>
+              <li><a href="#">Amapiano</a></li>
+              <li class="more">
+                <span><a href="#">MORE</a>
+                  <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">RnB</a></li>
+                  <li><a href="#">DeepHouse</a></li>
+                  <li><a href="#">Classic Music</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">RANDOM-VIDEOS</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li class="music"><a href="#">Artist Interviews</a></li>
+              <li class="music" ><a href="#">Celeb News</a></li>
+              <li class="music"><a href="#">Top Ten</a></li>
+              <li class="music"><a href="#">For</a></li>
+            </ul>
+          </li>
+          <li class="music"><a href="#">LIVE PERFOMANCES</a></li>
+          <li class="music"><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+     <!-- input tag -->
+     <input id="searchbar" onkeyup="search_music()" type="text"
+     name="search" placeholder="Search..">
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class=" card card0">
+      <div class="border">
+        <h2 class="music">Live Perfomances</h2>
+        <div class="icons">
+       
+        </div>
+      </div>
+    </div>
+    <div class="card card1">
+      <div class="border">
 
-  <script src="categories.js"></script>
+       <a  href="categories.html"><h2 class="music">Music</h2></a> 
+
+        <div class="icons">
+       
+        </div>
+      </div>
+    </div>
+    <div class="card card2">
+      <div class="border">
+        <h2 class="music">Random-Videos</h2>
+        <div class="icons">
+ 
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/JS/categories.js"></script>
 </body>
 </html>
