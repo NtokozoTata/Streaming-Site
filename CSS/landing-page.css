@@ -103,7 +103,11 @@ img {
   font-size: 5.2rem;
   line-height: 1.1;
   margin: 0 0 2rem;
+<<<<<<< Updated upstream
   padding-bottom: 100px;
+=======
+  padding-bottom: 280px;
+>>>>>>> Stashed changes
 }
 
 .showcase-content p {
