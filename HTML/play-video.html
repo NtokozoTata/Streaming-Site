@@ -6,14 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Play Video</title>
   <link rel="stylesheet" href="/CSS/music-videos.css">
+  <link rel="stylesheet" href="/CSS/categories.css">
+
 </head>
 <body>
   
-  <!------ nav bar------>
+  <!------ nav bar
   <nav class="flex-div">
       <div class="nav-left flex-div">
         <img src="/images/menu.png" class="menu-icon">
-        <img src="images/playza-logo.png" class="logo">
+        <img src="/images/playza-logo.png" class="logo">
       </div>
       <div class="nav-middle flex-div">
         <div class="search-box flex-div">
@@ -29,7 +31,82 @@
         <img src="images/Jack.png" class="user-icon">
       </div>
   </nav>
+
+  <nav class="flex-div">
+    <div class="nav-left flex-div">
+      <img src="/images/menu.png" class="menu-icon">
+      <img src="/images/playza-logo.png" class="logo">
+    </div>
+    <div class="nav-middle flex-div">
+      <div class="search-box flex-div">
+        <input type="text" placeholder="Search">
+        <img src="/images/search.png">
+      </div>
+    <img src="/images/voice-search.png" class="mic-icon">
+    </div>
+    <div class="nav-right flex-div">
+      <img src="images/upload.png">
+      <img src="images/more.png">
+      <img src="images/notification.png">
+      <img src="images/Jack.png" class="user-icon">
+    </div>
+</nav>------>
+
+<nav>
+  <div class="navbar">
+    <i class='bx bx-menu'></i>
+    <div class="logo"><a href="#">Logo</a></div>
+    <div class="nav-links">
+      <div class="sidebar-logo">
+        <span class="logo-name">Logo</span>
+        <i class='bx bx-x' ></i>
+      </div>
+      <ul class="links">
+        <li><a href="#">HOME</a></li>
+        <li>
+          <a href="#">MUSIC VIDEOS</Video></a>
+          <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+          <ul class="htmlCss-sub-menu sub-menu">
+            <li><a href="/HTML/music-videos.html">HipPop</a></li>
+            <li><a href="/HTML/music-videos.html">R&B</a></li>
+            <li><a href="/HTML/music-videos.html">Amapiano</a></li>
+            <li class="more">
+              <span><a href="#">MORE</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+              <ul class="more-sub-menu sub-menu">
+                <li><a href="#">RnB</a></li>
+                <li><a href="#">DeepHouse</a></li>
+                <li><a href="#">Classic Music</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">RANDOM-VIDEOS</a>
+          <i class='bx bxs-chevron-down js-arrow arrow '></i>
+          <ul class="js-sub-menu sub-menu">
+            <li class="music"><a href="#">Artist Interviews</a></li>
+            <li class="music" ><a href="#">Celeb News</a></li>
+            <li class="music"><a href="#">Top Ten</a></li>
+            <li class="music"><a href="#">For</a></li>
+          </ul>
+        </li>
+        <li class="music"><a href="#">LIVE PERFOMANCES</a></li>
+        <li class="music"><a href="#">CONTACT US</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="search-box">
+   <!-- input tag -->
+   <input id="searchbar" onkeyup="search_music()" type="text"
+   name="search" placeholder="Search..">
+    </div>
+  </div>
+</nav>
   
+<!--------- body   ------------>
   <div class="container play-container">
     <div class="row">
       <div class="play-video">
