@@ -9,6 +9,7 @@ body{
         padding:9%;
         
         background-image: url("../images/transformed_resized.png");
+        background-size: contain;
     }
     .pricing_design{
         position: relative;
@@ -104,9 +105,19 @@ body{
         width:77%;
     }
 
-    .container-enote{
-        display:flex;
-        flex-wrap:wrap;
-        height: 600px;
-        width:600px;
-    }
+   .every-note{
+    width:100%;
+    
+   
+   }
+
+   .container-enote{
+    background-image: url("../images/autotune-header-edit2.jpg");
+    
+    background-position: contain;
+    height:66%;
+    margin: 0px;
+    padding:9%;
+   }
+   
+
