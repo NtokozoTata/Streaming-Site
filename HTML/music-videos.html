@@ -4,11 +4,289 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="music-videos.css">
-  <title>Music Videos</title>
+  <link rel="stylesheet" href="/CSS/music-videos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/CSS/categories.css">
+    
+  
+  <title>Video Streaming</title>
+</style>
 </head>
 <body>
+<!------ nav bar
+  <nav class="flex-div">
+      <div class="nav-left flex-div">
+        <img src="/images/menu.png" class="menu-icon">
+        <img src="/images/playza-logo.png" class="logo">
+      </div>
+      <div class="nav-middle flex-div">
+        <div class="search-box flex-div">
+          <input type="text" placeholder="Search">
+          <img src="/images/search.png">
+        </div>
+      <img src="/images/voice-search.png" class="mic-icon">
+      </div>
+      <div class="nav-right flex-div">
+        <img src="images/upload.png">
+        <img src="images/more.png">
+        <img src="images/notification.png">
+        <img src="images/Jack.png" class="user-icon">
+      </div>
+  </nav>------>
+
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">Logo</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Logo</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="#">HOME</a></li>
+          <li>
+            <a href="#">MUSIC VIDEOS</Video></a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="/HTML/music-videos.html">HipPop</a></li>
+              <li><a href="/HTML/music-videos.html">R&B</a></li>
+              <li><a href="/HTML/music-videos.html">Amapiano</a></li>
+              <li class="more">
+                <span><a href="#">MORE</a>
+                  <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">RnB</a></li>
+                  <li><a href="#">DeepHouse</a></li>
+                  <li><a href="#">Classic Music</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">RANDOM-VIDEOS</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li class="music"><a href="#">Artist Interviews</a></li>
+              <li class="music" ><a href="#">Celeb News</a></li>
+              <li class="music"><a href="#">Top Ten</a></li>
+              <li class="music"><a href="#">For</a></li>
+            </ul>
+          </li>
+          <li class="music"><a href="#">LIVE PERFOMANCES</a></li>
+          <li class="music"><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="search-box">
+     <!-- input tag -->
+     <input id="searchbar" onkeyup="search_music()" type="text"
+     name="search" placeholder="Search..">
+      </div>
+    </div>
+  </nav>
+  <!----------- sidebar ------------>
+  <div class="sidebar">
+    <h3>PLAY HERE</h3>
+    <div class="shortcut-links">
+      
+      <a href=""><img src="/images/live performance.png"><p>Home</p></a>
+      <a href=""><img src="/images/10-107404_transparent-music-video-icon-png-tv-series-icon.png"><p>Explore</p></a>
+      <a href=""><img src="/images/png-clipart-job-interview-transparency-interview-text-logo-thumbnail.png"><p>Subscription</p></a>
+      <a href=""><img src="/images/library.png"><p>Library</p></a>
+      <a href=""><img src="/images/history.png"><p>History</p></a>
+      <a href=""><img src="/images/playlist.png"><p>Playlist</p></a>
+      <a href=""><img src="/images/messages.png"><p>Messsages</p></a>
+      <a href=""><img src="/images/show-more.png"><p>Show More</p></a>
+    <hr>
+    </div>
+   <!------- <div class="subscribed-list">
+      <h3>PLAY HERE</h3>
+      <a href=""><img src="/images/live performance.png" alt=""><p>LIVE Performance</p></a>
+      <a href=""><img src="/images/10-107404_transparent-music-video-icon-png-tv-series-icon.png" alt=""><p>Music Videos</p></a>
+      <a href=""><img src="/images/interviews.png" alt=""><p>Interviews</p></a>
+      <a href=""><img src="/images/cameron.png" alt=""><p>Audio Music</p></a>
+    </div>------>
+  </div>
+
+  <!--- --------------main ------------>
+
+  <div class="container">
+    <div class="banner">
+      <img src="/images/playza-logo.png">
+    </div>
+    
+   <!----- <div class="container play container">
+      <div class="row">
+        <div class="play-video">
+          <video controls autoplay>
+            <source src="videos/Future - Life Is Good (Official Music Video) ft. Drake (1).mp4" type="video/mp4">
+          </video>
+        </div>-------->
+    <div class="list-container">
+      
+      <div class="vid-list">
+        <a href="play-video.html"><img src="/images/drake future.jpg" class="thumbnail"></a>
+          <div class="flex-div">
+          <img src="/images/Jack.png">
+          <div class="vid-info">
+            <a href="">Future - Life Is Good (Official Music Video) ft. Drake</a>
+            <p>PlayZA</p>
+            <p>15k views &bull; 2 days</p>
+            
+            
+           <!--------- <button class="btn">
+              <i class="fa-solid fa-download"></i>
+          </button>--->
+          
+          </div>
+        </div>
+      </div>
+      <div class="vid-list">
+        <a href="play-video.html"><img src="/images/blxckie.jpg" class="thumbnail"></a>
+          <div class="flex-div">
+          <img src="/images/Jack.png">
+          <div class="vid-info">
+            <a href="">Blxckie & A-Reece - sneaky (Official Music Video)</a>
+            <p>PlayZA</p>
+            <p>15k views &bull; 2 days</p>>
+
+          </div>
+        </div>
+      </div>
+      <div class="vid-list">
+        <a href="play-video.html"><img src="/images/ice spice.jpg" class="thumbnail"></a>
+          <div class="flex-div">
+          <img src="images/Jack.png">
+          <div class="vid-info">
+            <a href="">Ice Spice & Nicki Minaj - Princess Diana (Official Music Video)</a>
+            <p>PlayZA</p>
+            <p>15k views &bull; 2 days</p>
+          </div>
+        </div>
+      </div>
+      <div class="vid-list">
+        <a href="play-video.html"><img src="/images/aka congratulate.jpg" class="thumbnail"></a>
+          <div class="flex-div">
+          <img src="/images/Jack.png">
+          <div class="vid-info">
+            <a href="">AKA - CONGRATULATE</a>
+            <p>PlayZA</p>
+            <p>15k views &bull; 2 days</p>
+
+          </div>
+        </div>
+      </div>   
+      
+      <div class="vid-list">
+        <a href="play-video.html"><img src="/images/tory.jpg" class="thumbnail"></a>
+          <div class="flex-div">
+          <img src="/images/Jack.png">
+          <div class="vid-info">
+            <a href="">Tory Lanez - Broke In A Minute - Directed by Midjordan</a>
+            <p>PlayZA</p>
+            <p>15k views &bull; 2 days</p>
+
+          </div>
+        </div>
+      </div> 
+      <div class="vid-list">
+        <a href="play-video.html"><img src="/images/aka-nasty-c-lemons.jpeg" class="thumbnail"></a>
+          <div class="flex-div">
+          <img src="images/Jack.png">
+          <div class="vid-info">
+            <a href="">AKA & Nasty C - Lemons (Lemonade) (Official Music Video)</a>
+            <p>PlayZA</p>
+            <p>15k views &bull; 2 days</p>
+          </div>
+        </div>
+      </div>
+      <div class="vid-list">
+        <a href="play-video.html"><img src="/images/travis.jpg" class="thumbnail"></a>
+          <div class="flex-div">
+          <img src="images/Jack.png">
+          <div class="vid-info">
+            <a href="">Travis Scott - Antidote</a>
+            <p>PlayZA</p>
+            <p>15k views &bull; 2 days</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vid-list">
+        <a href="play-video.html"><img src="/images/mashbeatz.jpg" class="thumbnail"></a>
+          <div class="flex-div">
+          <img src="images/Jack.png">
+          <div class="vid-info">
+            <a href="">MashBeatz - Never Ride Remix [Feat. Various Artists] (Official Music Video)</a>
+            <p>PlayZA</p>
+            <p>15k views &bull; 2 days</p>
+          </div>
+        </div>
+      </div>
+
+      
+
+      
+  <!------    
+    <div class="vid-list">
+        <a href="play-video.html"><img src="/images/Vee-Mampeezy-Makhadzi-Ukondelela-Video-scaled.jpg" class="thumbnail"></a>
+          <div class="flex-div">
+          <img src="/images/Jack.png">
+          <div class="vid-info">
+            <a href="">Vee Mampeezy & Makhadzi - Ukondelela (Official Music Video)</a>
+            <p>PlayZA</p>
+            <p>15k views &bull; 2 days</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="vid-list">
+        <a href="play-video.html"><img src="/images/beyonce.jpg" class="thumbnail"></a>
+          <div class="flex-div">
+          <img src="/images/Jack.png">
+          <div class="vid-info">
+            <a href="">Beyoncé - Dance for You (Video)</a>
+            <p>PlayZA</p>
+            <p>15k views &bull; 2 days</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vid-list">
+        <a href="play-video.html"><img src="/images/DJ-Maphorisa-Kabza-De-Small-–-Hello-Video-ft.-Madumane-1200x684.jpg" class="thumbnail"></a>
+          <div class="flex-div">
+          <img src="images/Jack.png">
+          <div class="vid-info">
+            <a href="">Kabza De Small & DJ Maphorisa - Hello (Official Video) ft. Madumane</a>
+            <p>PlayZA</p>
+            <p>15k views &bull; 2 days</p>
+
+          </div>
+        </div>
+      </div>
+
+      ----->
+
+      
+
+   
+
+     
+    </div>
+  </div>
+
+
+
+
+
+
   
-<script src="music-videos.js"></script>
+  
+  
+  <script src="script.js"></script>
 </body>
 </html>
