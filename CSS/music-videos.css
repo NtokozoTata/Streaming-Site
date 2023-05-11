@@ -377,10 +377,10 @@ nav .navbar .links li .sub-menu li{
     margin-bottom: 20px;
     width: fit-content;
     flex-wrap: wrap;
-    color: #000;
+    color: #ffffff;
   }
   .shortcut-links a:first-child{
-    color: #4e1c9e;
+    color: #ffffff;
   }
   .sidebar hr{
     border: 0;
@@ -391,7 +391,7 @@ nav .navbar .links li .sub-menu li{
   .sidebar h3{
     font-size: 13px;
     margin: 20px 0;
-    color: #000000;
+    color: #ffffff;
   }
   .subscribed-list a{
     display: flex;
