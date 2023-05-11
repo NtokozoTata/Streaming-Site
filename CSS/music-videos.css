@@ -358,7 +358,8 @@ nav .navbar .links li .sub-menu li{
 }
   /*------- sidebar -------------*/
   .sidebar{
-    background: #fff;
+    /*background: linear-gradient(to right,rgb(170, 116, 36), rgba(240, 145, 145, 0.562), rgb(156, 175, 214), rgb(64, 60, 138));*/
+    background: #85325f42;
     width: 15%;
     height: 100vh;
     position: fixed;
@@ -376,20 +377,21 @@ nav .navbar .links li .sub-menu li{
     margin-bottom: 20px;
     width: fit-content;
     flex-wrap: wrap;
+    color: #000;
   }
   .shortcut-links a:first-child{
-    color: #039c5c62;
+    color: #4e1c9e;
   }
   .sidebar hr{
     border: 0;
     height: 1px;
-    background: #ccc;
+    background: #cccccc00;
     width: 85%;
   }
   .sidebar h3{
     font-size: 13px;
     margin: 20px 0;
-    color: #5a5a5a;
+    color: #000000;
   }
   .subscribed-list a{
     display: flex;
@@ -419,7 +421,8 @@ nav .navbar .links li .sub-menu li{
   /*----- main ----*/
 
   .container{
-    background: #f9f9f9;
+    /*background: linear-gradient(to right,rgb(170, 116, 36), rgba(240, 145, 145, 0.562), rgb(156, 175, 214), rgb(64, 60, 138));*/
+    background: #85325f42;
     padding-left: 17%;
     padding-right: 2%;
     padding-top: 100px;
@@ -433,7 +436,7 @@ nav .navbar .links li .sub-menu li{
     background-color: rgb(31, 29, 28);
     /*background-image: linear-gradient(to right, rgb(238, 50, 182), rgb(59, 228, 17), rgb(6, 116, 243));*/
     
-    background-image: linear-gradient(to right,rgb(58, 9, 8), rgba(240, 86, 86, 0.274), rgb(6, 24, 63), rgb(7, 4, 56));
+    background-image: linear-gradient(to right,rgb(170, 116, 36), rgba(240, 145, 145, 0.562), rgb(156, 175, 214), rgb(64, 60, 138));
   } 
   .banner img{
     width: 100%;
