@@ -422,7 +422,7 @@ nav .navbar .links li .sub-menu li{
     background: #f9f9f9;
     padding-left: 17%;
     padding-right: 2%;
-    padding-top: 20px;
+    padding-top: 100px;
     padding-bottom: 20px;
   }
   .large-container{
@@ -431,7 +431,9 @@ nav .navbar .links li .sub-menu li{
   .banner{
     width: 100%;
     background-color: rgb(31, 29, 28);
-    background-image: linear-gradient(to right, rgb(238, 50, 182), rgb(59, 228, 17), rgb(6, 116, 243));
+    /*background-image: linear-gradient(to right, rgb(238, 50, 182), rgb(59, 228, 17), rgb(6, 116, 243));*/
+    
+    background-image: linear-gradient(to right,rgb(58, 9, 8), rgba(240, 86, 86, 0.274), rgb(6, 24, 63), rgb(7, 4, 56));
   } 
   .banner img{
     width: 100%;
