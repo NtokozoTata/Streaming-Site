@@ -83,7 +83,7 @@ nav .navbar .links li .sub-menu{
   top: 70px;
   left: 0;
   line-height: 40px;
-  background: #3E8DA8;
+  background: #3ea859;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
   display: none;
@@ -123,7 +123,9 @@ nav .navbar .links li:hover .js-sub-menu{
   position: relative;
    height: 40px;
   width: 40px;
+  
 }
+
 .navbar .search-box i{
   position: absolute;
   height: 100%;
@@ -153,6 +155,7 @@ nav .navbar .links li:hover .js-sub-menu{
   opacity: 1;
   pointer-events: auto;
   background: #3E8DA8;
+  border-radius: 20%;
 }
 
 .search-box .input-box::before{
@@ -164,6 +167,8 @@ nav .navbar .links li:hover .js-sub-menu{
   right: 10px;
   top: -6px;
   transform: rotate(45deg);
+  border-radius: 20%;
+
 }
 .search-box .input-box input{
   position: absolute;
@@ -177,9 +182,13 @@ nav .navbar .links li:hover .js-sub-menu{
   padding: 0 15px;
   font-size: 16px;
   border: none;
+  border-radius: 220%;
 }
 .navbar .nav-links .sidebar-logo{
   display: none;
+}
+#searchbar{
+  border-radius: 200;
 }
 .navbar .bx-menu{
   display: none;
@@ -202,9 +211,7 @@ nav .navbar .links li:hover .js-sub-menu{
   }
 }
 @media (max-width:800px){
-  nav{
-    /* position: relative; */
-  }
+
   .navbar .bx-menu{
     display: block;
   }
@@ -333,7 +340,7 @@ body{
   .card{
     height: 379px;
     width: 300px;
-    background: grey;
+    background: rgb(209, 198, 198);
     border-radius: 10px;
     transition: 0.8s;
     overflow: hidden;
@@ -369,23 +376,24 @@ body{
     opacity: 1
   }
   .card2{
-    background: url('/images/music.jpg') center center no-repeat;
+    background: url('/images/musicsr3.jpg') center center no-repeat;
     background-size: 600px;
   }
   :hover .card2{
-    background: url('/images/music.jpg') left center no-repeat;
+    background: url('/images/musicsr3.jpg') left center no-repeat;
     background-size: 600px;
   }
   
   .fa{
     opacity: 1;
   }
-  h2{
+  h2 a {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: solid white;
     margin: 20px;
     opacity: 0;
     transition:  1s;
+    text-decoration: none;
   }
   .fa{
     opacity: 0;
