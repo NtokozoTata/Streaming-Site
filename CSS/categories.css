@@ -376,11 +376,11 @@ body{
     opacity: 1
   }
   .card2{
-    background: url('/images/music.jpg') center center no-repeat;
+    background: url('/images/musicsr3.jpg') center center no-repeat;
     background-size: 600px;
   }
   :hover .card2{
-    background: url('/images/music.jpg') left center no-repeat;
+    background: url('/images/musicsr3.jpg') left center no-repeat;
     background-size: 600px;
   }
   
