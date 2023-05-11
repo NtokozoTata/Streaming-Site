@@ -302,22 +302,24 @@ body{
     .content-free{
       display:flex;
       align-content: flex-start;
-    }
-      
-
-    }
-    .content-personal{
-
-    }
-    .content-ultimate{
-
+      height:45%;
     }
 
+    .cont-free{
+      height:45%;
+    }
+    .cont-personal{
+      margin-bottom:9px;
+
+    }
+small {
+  line-height: 5px;
+}
     .pricing-content{
         position:relative;
         padding:9%;
         
-        background-image: url("../images/noblur.png");
+        background-image: url("../images/transformed\ \(1\)\ -\ Copy.png");
         background-repeat:no-repeat ;
         background-position: center;
     }
@@ -335,7 +337,7 @@ body{
     }
     .pricing_design .single-pricing:before{
         content: "";
-        background-color: #df5ea4;
+        background-color: #dcfff7;
         width: 100%;
         height: 100%;
         border-radius: 18px 18px 190px 18px;
