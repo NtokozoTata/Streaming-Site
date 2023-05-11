@@ -1,221 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+<!------------------------------------------ HEAD ------------------------------------------------->
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us Page</title>
-  <link rel="stylesheet" href="1styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-  rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-  crossorigin="anonymous"> 
-  <script src="https://kit.fontawesome.com/ab966ed0a3.js" crossorigin="anonymous"></script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<link rel="stylesheet" href="/CSS/categories.css">
+<title>Contact Us</title>
+<link rel="stylesheet" href="https://help.nflxext.com/helpcenter/common_9bdef097435301852318.css" />
+
+
+
 </head>
-<body>
-
-<!------------------------------------ Nav Bar 1 ------------------------------------->
-
-
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="images/LogoPlayza3.png" alt="">
-      </a>
+<!------------------------------------------ BODY ------------------------------------------------->
+<body class="page-contactus">
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#"><img src="/images/MicrosoftTeams-image.png" width="158px" alt=""></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Logo</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="categories.html">HOME</a></li>
+          <li>
+            <a href="music-videos.html">MUSIC VIDEOS</Video></a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">HipPop</a></li>
+              <li><a href="#">Jazz</a></li>
+              <li><a href="#">Amapiano</a></li>
+              <li class="more">
+                <span><a href="#">MORE</a>
+                  <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">RnB</a></li>
+                  <li><a href="#">DeepHouse</a></li>
+                  <li><a href="#">Classic Music</a></li>
+                </ul>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+          <li>
+            <a href="#">RANDOM-VIDEOS</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li class="music"><a href="#">Artist Interviews</a></li>
+              <li class="music" ><a href="#">Celeb News</a></li>
+              <li class="music"><a href="#">Top Ten</a></li>
+              <li class="music"><a href="#">For</a></li>
+            </ul>
           </li>
-        </ul> 
-        
+          <li class="music"><a href="#">LIVE PERFOMANCES</a></li>
+          <li class="music"><a href="contact.html">CONTACT US</a></li>
+          <li class="music"><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+     <!-- input tag -->
+     <input id="searchbar" onkeyup="search_music()" type="text"
+     name="search" placeholder="Search..">
       </div>
     </div>
   </nav>
-  <br><br><br><br><br><br><br><br>
-
-
-<!------------------------------ Accessory Section A ------------------------------->
-<div class="p-3 text-center">
-  <h1 class="font-weight-bold"></h1>
-    <p class="lead text-muted">About Us!</p>
+<div class="global-container">
+<div class="global-header">
+    <div class="overlay"></div>
+ 
+        <div class="logo-wrapper">
+            <a class="helpcenter-logo" href="/en">Help Center</a>
+        </div>
+    </div>
 </div>
-
-<div class="container-fluid-lg">
-  <div class="text-center">
-    
-  </div>
-  <div class="row align-items-center justify-content-center g-3 m-1">
-    <div class="col-8 col-lg-4 col-xl-3">
-      <div class="card border-0"> 
-        <div class="Image">
-        <a href="#">
-          <img src="images/maxresdefault (2).jpg" class="card-img-top" alt="image1">
-          </a>
-        </div>
-        <div class="card-body text-center">
-          <h3 class="card-tittle text-secondary fw-bold">Live Performances</h3>
-        </div>
-      </div>
+<!-------------------------------------- googleoff: all ------------------------------------------->
+    <div class="notifications">
+        <div id="notification-holder"></div>
     </div>
-
-    <div class="col-8 col-lg-4 col-xl-3">
-      <div class="card border-0">
-        <a href="#">
-          <img src="images/maxresdefault (3).jpg" class="card-img-top" alt="image2">
-          </a>
-        <div class="card-body text-center">
-          <h3 class="card-tittle text-secondary fw-bold">Music Videos</h3>
+<!-------------------------------------- googleoff: all ------------------------------------------->
+        <div id="personalization-placeholder"></div>
+        <div class="global-content">
+    <div class="container">
+        <h1>Contact us</h1>
+        <div id="contactus-placeholder"></div>
+        <div class="category quick-links">
+            <div class="category-wrapper">
+            <h2 class="category-title">
+                Quick Links
+            </h2>
+            <ol class="quick-links">
+                <li class="top-article">
+                    <a href="https://netflix.com/password" data-beacon="action=UpdatePasswdLink" target="_blank" rel="noopener">
+                        Reset password
+                    </a>
+                </li>
+                <li class="top-article">
+                    <a href="https://netflix.com/email" data-beacon="action=UpdateEmailLink" target="_blank" rel="noopener">
+                        Update email
+                    </a>
+                </li>
+                <li class="top-article">
+                    <a href="https://netflix.com/loginhelp" data-beacon="action=SigninHelpLink" target="_blank" rel="noopener">
+                        Get help signing in
+                    </a>
+                </li>
+                <li class="top-article">
+                    <a href="https://netflix.com/YourAccountPayment" data-beacon="action=UpdatePaymentLink" target="_blank" rel="noopener">
+                        Update payment method
+                    </a>
+                </li>
+                <li class="top-article">
+                    <a href="/en/titlerequest?ui_action=title-suggestion-quicklinks" data-beacon-anchor="action=titlesuggestion">
+                        Request Music or Videos
+                    </a>
+                </li>
+            </ol>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class="col-8 col-lg-4 col-xl-3">
-      <div class="card border-0">
-        <a href="#">
-          <img src="images/maxresdefault 3.jpg" class="card-img-top" alt="image3">
-          </a>
-        <div class="card-body text-center">
-          <h3 class="card-tittle text-secondary fw-bold">Sports Hight lights</h3>
-        </div>
-      </div>
-    </div>
-
-  </div>
+    <div class="footer-push"></div>
 </div>
-
-
-<!------------------------------ 3 Images Lay Section ------------------------------->
-
-
-
-<!-------------------------------- Footer Design Section  ----------------------------------->
-
-<footer class="bg-dark text-white pt-5 pb-4">
-
-  <div class="container text-center text-md-left">
-
-      <div class="row text-center text-md-left">
-
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold text-white">Playza</h5>
-              <p>
-                <a href="#" class="text-muted" style="text-decoration: none;">About Us</a>
-              </p>
-              <p>
-                <a href="#" class="text-muted" style="text-decoration: none;">Marketing Services</a>
-              </p>
-              <p>
-                <a href="#" class="text-muted" style="text-decoration: none;">Gift Vouchers</a>
-              </p> 
-
-          </div>
-
-<!-------------------------------- Products Section  ----------------------------------->
-
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-white">Streaming</h5>
-            <p>
-              <a href="#" class="text-muted" style="text-decoration: none;">Music videos</a>
-            </p>
-            <p>
-              <a href="#" class="text-muted" style="text-decoration: none;">Live concert</a>
-            </p>
-            <p>
-              <a href="#" class="text-muted" style="text-decoration: none;">Sports hight lights</a>
-            </p>
-          </div>
-
-<!-------------------------------- Links Section  ----------------------------------->
-
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-white">Useful links</h5>
-            <p>
-              <a href="#" class="text-muted" style="text-decoration: none;">Help center</a>
-            </p>
-            <p>
-              <a href="#" class="text-muted" style="text-decoration: none;">Subscription</a>
-            </p>
-            <p>
-              <a href="#" class="text-muted" style="text-decoration: none;">Help</a>
-            </p>
-            
-          </div>
-
-<!-------------------------------- Contact Section  ----------------------------------->
-
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-white">Contact</h5>
-            <p class="text-muted">
-              <i class="fas fa-home mr-3 p-1"></i>Johannesburg, Braamfontein, SA
-            </p>
-            <p class="text-muted">
-              <i class="fa-solid fa-envelope mr-3 p-1"></i></i>Playza@hd.org.za
-            </p>
-            <p class="text-muted">
-              <i class="fa-solid fa-phone mr-3 p-1"></i>+27 11 934 9580
-            </p>
-
-          </div>
-
-      </div>
-
-      <hr class="mb-4">
-
-      <div class="row align-items-center">
-
-        <div class="col-md-7 col-lg-8">
-          <p> Copyright @2023 ALL rights reserved by:
-            <a href="#" style="text-decoration: none;">
-            <strong class="text-white">Playza</strong>
-            </a></p>
-
-        </div>
-
-<!-------------------------------- Social Icon Section  ----------------------------------->
-
-        <div class="col-md-5 col-lg-4">
-          <div class="text-center text-md-right">
-
-            <ul class="list-unstyled list-line">
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab 
-                  fa-facebook"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab 
-                  fa-twitter"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab 
-                  fa-google-plus"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab 
-                  fa-linkedin-in"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab 
-                  fa-youtube"></i></a>
-              </li>
-
-            </ul>
-
-          </div>
-
-        </div>
-
-      </div>
-
-  </div>
-
-</footer>
-
-
-<!---------------------------------- JAVA SCRIPT ------------------------------------>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
-    crossorigin="anonymous"></script>
-    
+<!------------------------------------------------------------------------------------------------>
+<div class="global-page-footer">
+    <div class="container">
+            <div id="lang-switcher-wrapper" class="select-wrapper">
+                <div class="select select-grey">
+                    <select id="lang-switcher" aria-label="Select your preferred language:">
+                        <option value="en" selected="selected">English</option>
+                        
+                        <option value="de">Deutsch</option>
+                        
+                        <option value="es">Español</option>
+                    </select>
+                    <svg width="24px" height="24px" viewBox="0 0 24 24">
+                    <path d="M12.9416531,7.71264972 L17.9520258,15.2282087 C18.4421897,15.9634546 18.2435115,16.9568456 17.5082656,17.4470095 C17.2454376,17.6222282 16.9366253,17.715729 16.6207453,17.715729 L6.6,17.715729 C5.7163444,17.715729 5,16.9993846 5,16.115729 C5,15.799849 5.09350084,15.4910367 5.26871953,15.2282087 L10.2790922,7.71264972 C10.7692561,6.97740382 11.7626471,6.77872563 12.497893,7.26888957 C12.6736566,7.38606534 12.8244774,7.53688606 12.9416531,7.71264972 Z" transform="translate(11.610458, 12.357865) scale(1, -1) translate(-11.610458, -12.357865) "></path>
+                    </svg>
+                </div>
+            </div>
+        <ul class="footer-links">
+            <li class="footer-link">
+                <a href="/en/legal/termsofuse"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------>
 </body>
+
+<script crossorigin="anonymous" src="https://help.nflxext.com/helpcenter/contact-us_d2e82cb502b4b7dbfff8.js"></script>
 
 </html>
