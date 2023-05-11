@@ -298,12 +298,28 @@ body{
     background-repeat: no-repeat;
 
     }
+
+    .content-free{
+      display:flex;
+      align-content: flex-start;
+    }
+      
+
+    }
+    .content-personal{
+
+    }
+    .content-ultimate{
+
+    }
+
     .pricing-content{
         position:relative;
         padding:9%;
         
-        background-image: url("../images/transformed_resized.png");
-        background-size: contain;
+        background-image: url("../images/noblur.png");
+        background-repeat:no-repeat ;
+        background-position: center;
     }
     .pricing_design{
         position: relative;
@@ -415,8 +431,8 @@ body{
    }
 
    .container-hd{
-    height:66%;
-    width:66%;
+  
+    
 
    }
 
@@ -424,5 +440,10 @@ body{
     height: 66%;
     width:81%;
    }
+
    
+   
+   .streamlive{
+    margin-right:20px;
+   }
 
