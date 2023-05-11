@@ -300,7 +300,10 @@ body{
     }
 
     .content-free{
+      display:flex;
       align-content: flex-start;
+    }
+      
 
     }
     .content-personal{
