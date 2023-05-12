@@ -189,14 +189,14 @@ body{
 
 .wrapper .login{
     padding: 12px;
-    background: linear-gradient(to bottom,  rgb(93, 46, 107),black);
+    background: linear-gradient(to bottom,  rgb(93, 46, 107),rgb(75, 68, 68));
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
     width: 130px;
     border: none;
     margin: 6px 0 50px 0px;
     cursor: pointer;
-    color: black;
+    color: rgb(228, 211, 211);
     font-weight: 700;
     font-size: 15px;
 }
