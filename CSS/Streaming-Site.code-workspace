@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../Desktop/music library"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
