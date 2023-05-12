@@ -1,204 +1,261 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  line-height: 1.7;
-  color: #039c5d;
-
-  background-color: #1f2029; /* For browsers that do not support gradients */
-  background-image: linear-gradient(
-    to right,
-
-    rgb(58, 9, 8),
-    rgba(240, 86, 86, 0.274),
-    rgb(6, 24, 63),
-    rgb(7, 4, 56)
-  );
-  background-repeat: no-repeat;
-}
-a:hover {
-  text-decoration: none;
-}
-.link {
-  color: #039c5d;
-}
-.link:hover {
-  color: #c4c3ca;
-}
-p {
-  font-weight: 500;
-  font-size: 14px;
-}
-h4 {
-  font-weight: 600;
-}
-h6 span {
-  padding: 0 20px;
-  font-weight: 700;
-}
-.section {
-  position: relative;
-  width: 100%;
-  display: block;
-}
-.full-height {
-  min-height: 100vh;
-}
-[type="checkbox"]:checked,
-[type="checkbox"]:not(:checked) {
-  display: none;
-}
-.checkbox:checked + label,
-.checkbox:not(:checked) + label {
-  position: relative;
-  display: block;
-  text-align: center;
-  width: 60px;
-  height: 16px;
-  border-radius: 8px;
-  padding: 0;
-  margin: 10px auto;
-  cursor: pointer;
-  background-color: #039c5d;
-}
-.checkbox:checked + label:before,
-.checkbox:not(:checked) + label:before {
-  position: absolute;
-  display: block;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  color: #039c5d;
-  background-color: #020305;
-  font-family: "unicons";
-  content: "\eb4f";
-  z-index: 20;
-  top: -10px;
-  left: -10px;
-  line-height: 36px;
-  text-align: center;
-  font-size: 24px;
-  transition: all 0.5s ease;
-}
-.checkbox:checked + label:before {
-  transform: translateX(44px) rotate(-270deg);
-}
-.card-3d-wrap {
-  position: relative;
-  width: 440px;
-  max-width: 100%;
-  height: 400px;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  perspective: 800px;
-  margin-top: 60px;
-}
-.card-3d-wrapper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  transition: all 600ms ease-out;
-}
-.card-front,
-.card-back {
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  background-image: url("/img/pattern_japanese-pattern-2_1_2_0-0_0_1__ffffff00_000000.png");
-  position: absolute;
-  border-radius: 6px;
-  -webkit-transform-style: preserve-3d;
-}
-.card-back {
-  transform: rotateY(180deg);
-}
-.checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
-  transform: rotateY(180deg);
-}
-.center-wrap {
-  position: absolute;
-  width: 100%;
-  padding: 0 35px;
-  top: 50%;
-  left: 0;
-  transform: translate3d(0, -50%, 35px) perspective(100px);
-  z-index: 20;
-  display: block;
-}
-.form-group {
-  position: relative;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-.form-style {
-  padding: 13px 20px;
-  padding-left: 55px;
-  height: 48px;
-  width: 100%;
-  font-weight: 500;
-  border-radius: 4px;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 0.5px;
-  outline: none;
-  color: #c4c3ca;
-  background-color: #1f2029;
-  border: none;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-  box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
-}
-.form-style:focus,
-.form-style:active {
-  border: none;
-  outline: none;
-  box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
-}
-.input-icon {
-  position: absolute;
-  top: 0;
-  left: 18px;
-  height: 48px;
-  font-size: 24px;
-  line-height: 48px;
-  text-align: left;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-}
-.btn {
-  border-radius: 4px;
-  height: 44px;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-  padding: 0 30px;
-  letter-spacing: 1px;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  align-items: center;
-  background-color: #039c5d;
-  color: #000000;
-}
-.btn:hover {
-  background-color: #000000;
-  color: #48e6a4;
-  box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-img {
-  width: 100%;
+body{
+    min-height: 100vh;
+    background-color: rgb(77, 68, 78);
+    background-image: linear-gradient(to right, rgba(247, 123, 123, 0), rgb(148, 15, 55));
 }
-.showcase {
-  width: 100%;
-  height: 93vh;
-  position: relative;
-  background: url("IMG/photo-1614149162883-504ce4d13909.jpg") no-repeat center
-    center/cover;
+
+
+
+.wrapper {
+    max-width: 900px;
+    background-color: #594964;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    margin: 10rem auto auto auto;
+    box-shadow: 0 8px 20px 0px #1f1f1f1a;
+    overflow: hidden;
+}
+
+.wrapper .form-left{
+    background: linear-gradient(to left, rgb(241, 226, 241),rgb(82, 177, 111));
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px 40px;
+    position: relative;
+    width: 100%;
+    color: white;
+}
+
+.wrapper h2{
+    font-weight: 700;
+    font-size: 25px;
+    padding: 5px 0 0;
+    margin-bottom: 34px;
+    pointer-events: none;
+}
+
+.wrapper .form-left p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.5;
+    pointer-events: none;
+}
+
+.wrapper .form-left .text{
+    margin: 20px 0 25px;
+}
+
+.wrapper .form-left p span{
+    font-weight: 700;
+}
+
+.wrapper .form-left input{
+    padding: 15px;
+    background: linear-gradient(to left, rgb(148, 114, 148),rgb(105, 184, 74));
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 180px;
+    border: none;
+    margin: 15px 0 50px 0px;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    appearance: unset;
+    outline: none;
+}
+
+.wrapper .form-left input:hover{
+    color: white;
+}
+
+.wrapper .form-right{
+    padding: 20px 40px;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to right, rgb(74, 133, 118),rgb(228, 34, 34));
+}
+
+.wrapper .form-right h2{
+    color: white;
+}
+
+.wrapper .form-right label{
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.wrapper .form-right .input-field{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #e5e5e5;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    color: #333;
+}
+
+.wrapper .form-right .input-field:focus{
+    border: 1px solid black;
+}
+
+
+.wrapper .option {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    font-weight: 900;
+    cursor: pointer;
+    user-select: none
+}
+
+.wrapper .option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+
+.wrapper .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 2px
+}
+
+.wrapper .option:hover input~.checkmark {
+    background-color: #f1f1f1
+}
+
+.wrapper .option input:checked~.checkmark {
+    border: 2px solid #e5e5e5;
+    background-color: #fff;
+    transition: 300ms ease-in-out all
+}
+
+.wrapper .checkmark:after {
+    content: "\2713";
+    position: absolute;
+    display: none;
+    color: #3786bd;
+    font-size: 1rem;
+}
+
+.wrapper .option input:checked~.checkmark:after {
+    display: block
+}
+
+.wrapper .option .checkmark:after {
+    left: 2px;
+    top: -4px;
+    width: 5px;
+    height: 10px
+}
+
+.wrapper .register{
+    padding: 12px;
+    background: linear-gradient(to bottom,  rgb(117, 101, 117),black);
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 130px;
+    border: none;
+    margin: 6px 0 50px 0px;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.wrapper .login{
+    padding: 12px;
+    background: linear-gradient(to bottom,  rgb(93, 46, 107),rgb(75, 68, 68));
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 130px;
+    border: none;
+    margin: 6px 0 50px 0px;
+    cursor: pointer;
+    color: rgb(228, 211, 211);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.wrapper .register:hover{
+    color: black;
+}
+
+.wrapper a{
+    text-decoration: none;
+}
+
+.password-input-container {
+    position: relative;
+  }
+  
+  .password-input-container input[type="password"] {
+    padding-right: 35px;
+  }
+  
+  .password-input-container label {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+
+@media (max-width: 860.5px) {
+    .wrapper{
+        margin: 50px 5px;
+    }
+}
+
+
+@media (max-width: 767.5px){
+    .wrapper{
+        flex-direction: column;
+        margin: 30px 20px;
+    }
+
+    .wrapper .form-left{
+        border-bottom-left-radius: 0px;
+    }
+
+    
+}
+
+@media (max-width: 575px) {
+
+    .wrapper{
+        margin: 30px 15px;
+    }
+
+    .wrapper .form-left{
+        padding: 25px;
+    }
+    .wrapper .form-right{
+        padding: 25px;
+    }
 }
